@@ -10,7 +10,7 @@ logging.basicConfig(
 )
 
 
-def count(source_file: str, dest_file: str):
+def count(source_file: str, dest_file: str) -> None:
     """
     Count source
     :param source_file:

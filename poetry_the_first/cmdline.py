@@ -13,7 +13,7 @@ def init_args() -> argparse.Namespace:
     return parser.parse_args(sys.argv[1:])
 
 
-def main():
+def main() -> None:
     """Execute"""
     args = init_args()
     count(args.source, args.dest)

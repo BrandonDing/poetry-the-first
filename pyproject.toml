@@ -11,7 +11,7 @@ packages = [
 ]
 
 [tool.poetry.dependencies]
-python = ">=3.8,<4.0"
+python = ">=3.9,<4.0"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^7.2.0"
@@ -33,7 +33,7 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.black]
 line-length = 120
-target-version = ['py37']
+target-version = ['py39']
 preview = true
 
 [tool.mypy]
@@ -99,4 +99,5 @@ skip_empty = true
 branch = true
 source = ["poetry_the_first"]
 
-
+[tool.poetry.plugins.console_scripts]
+word_count = "poetry_the_first.cmdline:main"
